@@ -35,7 +35,6 @@ texx = """
        ░         ░     ░     ░ ░      ░  ░       ░  ░     ░  ░
                 ░            ░                                
 
-client v1.3 | developed by maverick
 """
 
 def print_header():
@@ -109,18 +108,24 @@ def main():
 
     lol = str(f"{ip} / {hostname}")
     print_centered(lol)
-    print_centered(f"ISP/Organization: {org}")
-    print_centered(f"ASN: {asn}")
 
-    print_centered(" ")
-    print_centered(f"Country: {country}")
-    print_centered(f"Region: {region}")
-    print_centered(f"City: {city}")
-    print_centered(f"Location: {location}")
-    print_centered(f"Postal Code: {postal}")
-    print_centered(f"Timezone: {timezone}")
+    tex = f"""
 
-    print_centered(" ")
+ISP/Organization: {org}
+Country: {country}
+Region: {region}
+City: {city}
+Location: {location}
+Postal Code: {postal}
+Timezone: {timezone}
+
+"""
+    
+    te = Center.XCenter(tex)
+
+    tel = Colorate.Color(Colors.light_red, te, True)
+    print(tel)
+
 
     while True:
         try:
@@ -145,6 +150,7 @@ def main():
             print_centered(result)
             time.sleep(1)
     except KeyboardInterrupt:
+        System.Clear()
         print("\n\nProgram terminated by user.")
     except Exception as e:
         pass
@@ -152,12 +158,17 @@ def main():
 if __name__ == "__main__":
     try:
         System.Clear()
-        print_centered(Colorate.Color(Colors.red, "LOADING..", True))
+        sdf = Center.Center("Analyzing Hostname")
+
+
+        co = Colorate.Color(Colors.red, sdf, True)
+        print(co)
         time.sleep(1)
         System.Clear()
         print_header()
         main()
     except KeyboardInterrupt:
+        System.Clear()
         print("\n\nProgram terminated by user.")
     except Exception as e:
         print(f"Error: {str(e)}")

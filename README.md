@@ -1,5 +1,5 @@
 # MVRCKLA
-mvrckla is a automated tool that looks up hostnames and you can see if that website has a cloudflare proxy or something, and it has a builtin paping-ish pinging system so u can boot it and watch it DIE!!!
+mvrckla is a automated tool that looks up hostnames and you can see if that address is online on a specific port
 
 ## Usage
 `python3 mvrckla.py example.com`

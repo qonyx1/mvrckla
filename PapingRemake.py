@@ -1,16 +1,3 @@
-# 
-#   PIM2AMC
-# 
-#   Also known as 
-#   PLEASE IGNORE MY 2 AM CODE
-# 
-#   I was very tired when I wrote this. Thanks :')
-#   Enjoy
-#
-
-
-
-
 import socket
 import requests
 import time
@@ -23,18 +10,8 @@ def print_centered(text):
     print(centered_text)
 
 texx = """
-
- ███▄ ▄███▓ ██▒   █▓ ██▀███   ▄████▄   ██ ▄█▀ ██▓    ▄▄▄      
-▓██▒▀█▀ ██▒▓██░   █▒▓██ ▒ ██▒▒██▀ ▀█   ██▄█▒ ▓██▒   ▒████▄    
-▓██    ▓██░ ▓██  █▒░▓██ ░▄█ ▒▒▓█    ▄ ▓███▄░ ▒██░   ▒██  ▀█▄  
-▒██    ▒██   ▒██ █░░▒██▀▀█▄  ▒▓▓▄ ▄██▒▓██ █▄ ▒██░   ░██▄▄▄▄██ 
-▒██▒   ░██▒   ▒▀█░  ░██▓ ▒██▒▒ ▓███▀ ░▒██▒ █▄░██████▒▓█   ▓██▒
-░ ▒░   ░  ░   ░ ▐░  ░ ▒▓ ░▒▓░░ ░▒ ▒  ░▒ ▒▒ ▓▒░ ▒░▓  ░▒▒   ▓▒█░
-░  ░      ░   ░ ░░    ░▒ ░ ▒░  ░  ▒   ░ ░▒ ▒░░ ░ ▒  ░ ▒   ▒▒ ░
-░      ░        ░░    ░░   ░ ░        ░ ░░ ░   ░ ░    ░   ▒   
-       ░         ░     ░     ░ ░      ░  ░       ░  ░     ░  ░
-                ░            ░                                
-
+Welcome to
+PapingRemake v1
 """
 
 def print_header():
